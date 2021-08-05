@@ -3,7 +3,7 @@ class HelloJava {
     // 文字列を表示する
     System.out.println("Hello! I'm RecurrentTechnology");
 
-    // 繰り返し文
+    // for文
     for ( int number = 1; number <=5; number ++) {
       System.out.println(number);
     }
@@ -12,5 +12,20 @@ class HelloJava {
       sum += number;
     }
     System.out.println("sum:" + sum);
+
+    // 九九
+    for (int number1 = 1; number1 <= 9; number1 ++) {
+      for (int number2 = 1; number2 <= 9; number2++) {
+        System.out.print("" + number1 + "x" + number2 + "=" + (number1 * number2) + " ");       
+      }
+      System.out.println("");
+    }
+
+    // do while文
+    int number = 1;
+    do {
+      number ++;
+      System.out.println("number =" + number);
+    } while (number < 5);
   }
 }
